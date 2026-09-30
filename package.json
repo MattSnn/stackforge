@@ -1,0 +1,19 @@
+{
+  "name": "stackforge-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "app"],
+  "scripts": {
+    "test": "vitest run --root packages/core",
+    "build:engine": "npm run build -w @stackforge/engine",
+    "e2e": "node packages/engine/scripts/e2e.mjs",
+    "dev": "npm run tauri dev -w app",
+    "build": "npm run build:engine && npm run tauri build -w app"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.0",
+    "esbuild": "^0.28.2",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.3"
+  }
+}

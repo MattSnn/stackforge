@@ -1,0 +1,13 @@
+{
+  "name": "@stackforge/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "stackforge": "dist/engine.mjs" },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@stackforge/core": "*"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+dist
+.e2e
+app/src-tauri/target
+app/src-tauri/gen
+app/src-tauri/resources/engine.mjs
+*.log
+*.tsbuildinfo
